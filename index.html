@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do list</title>
+  <link rel="stylesheet" href="new-todo.css">
+  
+</head>
+<body>
+  <h1 id="main-heading">To Do App</h1>
+ 
+  <div class="grid-container">
+    <h5>Checkbox</h5>
+     <input id="todo-input" type="text" placeholder="Enter To do here">
+  <input id="todo-date" type="date">
+  <button class="btn-add" onclick="toDoadd();">Add</button>
+
+  </div>
+  <div class="todo-container grid-container"></div>
+ <div class="footer-credit">Designed by Laksh</div>
+ <button class="dark-mode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+
+  <script src="todo.js"></script>
+</body>
+</html>

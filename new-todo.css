@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5; /* subtle background */
+  margin: 0;
+  padding: 0;
+}
+
+/* MAIN HEADING STYLE */
+#main-heading {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #ccc;
+  letter-spacing: 1px;
+}
+
+/* GRID CONTAINER FOR TODO */
+.grid-container {
+  display: grid;
+  grid-template-columns:60px 200px 150px 100px;;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  width: fit-content;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* INPUTS */
+#todo-input,
+#todo-date {
+  font-size: 15px;
+  padding: 10px 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* BUTTONS */
+.btn-add,
+.btn-delete {
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 12px 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btn-add {
+  background-color: #28a745;
+}
+
+.btn-add:hover {
+  background-color: #218838;
+}
+
+.btn-delete {
+  background-color: #b30000;
+}
+
+.btn-delete:hover {
+  background-color: #990000;
+}
+.footer-credit {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  font-size: 14px;
+  color: #777;
+  font-style: italic;
+  z-index: 100;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.footer-credit:hover {
+  opacity: 1;
+  color: #333;
+}
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.todo-row {
+  display: grid;
+  grid-template-columns: 30px 1fr 150px 100px; /* 4 columns */
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+    padding: 15px;
+  }
+
+  .todo-row {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+
+  #todo-input,
+  #todo-date,
+  .btn-add {
+    width: 100%;
+  }
+
+  #main-heading {
+    font-size: 28px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
